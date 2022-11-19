@@ -1,0 +1,45 @@
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 42%;
+  }
+  .intro {
+    grid-template-columns: auto;
+  }
+  .intro-texts {
+    order: 2;
+    align-self: center;
+    text-align: center;
+  }
+  .intro-images-container {
+    order: 1;
+  }
+  .intro-images {
+    img {
+      max-width: 20rem;
+    }
+  }
+  .about {
+    flex-direction: column;
+  }
+
+  .about-texts,
+  .about-gallary {
+    flex: 0;
+  }
+  .about-texts {
+    h2 {
+      text-align: center;
+      font-size: $header1;
+    }
+  }
+  .about-gallary {
+    gap: 3rem;
+    padding: 4rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
